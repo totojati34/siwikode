@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SIWIKODE HOME PAGE</title>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">SIWIKODE</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html/rekreasi.html">Wisata Rekreasi</a></li>
+                        <li><a href="html/kuliner.html">Wisata Kuliner</a></li>
+                        <li><a class="modal-trigger" href="#registrasi" data-target="registrasi">Registrasi</a></li>
+                        <li><a class="modal-trigger" href="#login" data-target="login">LOGIN</a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+                <!-- Modal Structure -->
+                <div id="registrasi" class="modal modal-fixed-footer" style="width: 400px; min-height: 85%;">
+                    <div class="modal-content">
+                        <div class="row">
+                            <form class="col s12 center">
+                            <div class="row">
+                                <i class="material-icons">account_circle</i>
+                                <h2>FORM REGISTRASI</h2>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">account_circle</i>
+                                  <input id="registrasi-username" type="text" class="validate">
+                                  <label for="registrasi-username">Username</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="registrasi-password" type="password" class="validate">
+                                    <label for="registrasi-password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="confirm-password" type="password" class="validate">
+                                    <label for="confirm-password">Confirm Password</label>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span>Remember Me</span>
+                                        </label>
+                                </div>
+                            </div>
+
+                            
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Registrasi
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <button class="btn waves-effect yellow darken-2 waves-yellow" type="reset" name="action">Reset
+                                <i class="material-icons right">mode_edit</i>
+                            </button>
+                            </form>
+                          </div>
+                    </div>
+                </div>
+                <!-- Modal Structure -->
+                <div id="login" class="modal modal-fixed-footer" style="width: 400px; min-height: 85%;">
+                    <div class="modal-content">
+                        <div class="row">
+                          <div class="col s12 center form">
+                            <div class="row">
+                                <i class="material-icons">account_circle</i>
+                                <h2>FORM LOGIN</h2>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">account_circle</i>
+                                  <input id="icon_prefix" name="username" type="text" class="validate">
+                                  <label for="icon_prefix">Username</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="password" name="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span>Remember Me</span>
+                                        </label>
+                                </div>
+                                
+                            </div>
+
+                            
+                            <button class="btn index-login waves-effect waves-light" onclick="login()" type="submit" name="action">Login
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <button class="btn reset waves-effect yellow darken-2 waves-yellow" type="reset" name="action">Reset
+                                <i class="material-icons right">mode_edit</i>
+                            </button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul id="mobile-demo" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+            <img src="img/grand-canyon.jpg" alt="Grand Canyon">
+            </div>
+            <a href="#user"><img class="circle" src="img/profile.png" alt="Profile"></a>
+            <a href="#name"><span class="white-text name">Toto Jati Wijayanto</span></a>
+            <a href="#email"><span class="white-text email">totojati34@gmail.com</span></a>
+        </div></li>
+        <li><a href="html/rekreasi.html">Wisata Rekreasi</a></li>
+        <div class="divider"></div>
+        <li><a href="html/kuliner.html">Wisata Kuliner</a></li>
+        <div class="divider"></div>
+        <li><a href="#registrasi" class="modal-trigger" data target="registrasi">Registrasi</a></li>
+        <div class="divider"></div>
+        <li><a href="#login" class="modal-trigger" data-target="login">LOGIN</a></li>
+    </ul>
+
+    <div class="carousel carousel-slider gambar1 center">
+      <div class="carousel-fixed-item center">
+        <a href="" class="btn waves-effect teal lighten-1 white-text darken-text-2"><i class="material-icons right">search</i>Cari Tempat</a>
+      </div>
+      <div class="carousel-item white-text">
+          <h2>Cafe Bingsu</h2>
+          <p class="white-text">Jalan Margonda Raya No.330, Beji, Depok</p>
+      </div>
+      <div class="carousel-item white-text">
+          <h2>Water Park Aladin</h2>
+          <p class="white-text">Perumahan, Cibuluh Grand Depok City, Depok City, West Java</p>
+      </div>
+      <div class="carousel-item white-text">
+          <h2>Taman Wiladatika</h2>
+          <p class="white-text">Jl. Jambore No.1, RT.03/RW.3, Harjamukti, Cimanggis, Kota Depok, Jawa Barat</p>
+      </div>
+      <div class="carousel-item white-text">
+          <h2>Kampung 99</h2>
+          <p class="white-text">Jl. KH. Muhasan II, Meruyung, Limo, Meruyung, Limo, Kota Depok, Jawa Barat</p>
+      </div>
+    </div>
+
+    <div class="features valign-wrapper">
+        <div class="container">
+            <div class="row center">
+                <div class="col m4">
+                    <i class="medium material-icons">attach_money</i>
+                    <p>Hemat pengeluaran dengan fitur member SIWIMEMBER dan dapatkan beragam promo untuk berbagai wisata Depok.</p>
+                </div>
+                <div class="col m4">
+                    <i class="medium material-icons">directions</i>
+                    <p>Terintegrasi degan maps untuk memperpudah anda menemukan lokasi tujuan.</p>
+                </div>
+                <div class="col m4">
+                    <i class="medium material-icons">people</i>
+                    <p>Fitur full service. operator kami siap melayani anda dalam 24 jam. Hubungi kami jika terdapat kendala pemesanan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="landing parallax-container">
+        <div class="parallax"><img src="img/rekreasi/pasir-putih.jpg" alt="pasir putih"></div>
+    </div>
+
+    <div class="unggulan row">
+      <div class="col s12">
+        <h2 class="center">Wisata Unggulan Kota Depok</h2>
+      </div>
+    </div>
+    <div id="unggul" class="carousel gambar2">
+      <div class="card large carousel-item hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/rekreasi/Arung-Jeram-Ciliwung-Depok.jpg" alt="arum jeram ciliwung depok">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Arum Arung Jeram Ciliwung Depok<i class="material-icons right">more_vert</i></span>
+            <p><a href="#unggul" class="activator">Detail</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Arum Arung Jeram Ciliwung Depok<i class="material-icons right">close</i></span>
+            <p>Lokasi : Jl. Boulevard Grand Depok City
+              Kalau kamu pecinta adrenalin, boleh dicoba nih guys! Tempat ini sangat cocok buat kamu yang ingin melepaskan penat dari segala aktivitas harian terutama yang bekerja di Ibu Kota
+              </p>
+          </div>
+      </div>
+      <div class="card large carousel-item hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/rekreasi/Kampung-99-Pepohonan.jpg" alt="kampung 99">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Kampung 99<i class="material-icons right">more_vert</i></span>
+            <p><a href="#unggul" class="activator">Detail</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Kampung 99<i class="material-icons right">close</i></span>
+            <p>Lokasi: Jl. KH. Muhasan II, Meruyung, Kec. Limo, Depok, Jawa Barat. 
+              Nama tempat wisata yang pertama ini memang unik. Cocok untuk mereka yang mencari suasana tenang, damai dan terasa sejuk setelah beraktivitas cukup padat dalam satu minggu penuh.Kampung 99 Pepohonan ini merupakan tempat hunian sekaligus rekreasi yang berkonsep menyatu dengan alam.
+              Lokasi ini juga dikenal dengan nama kampung Rusa yang dekat dengan Masjid Dian Al Mahri. Kampung 99 Pepohonan ini berada di Jalan KH Muhasan II, kelurahan Maruyung Kecamatan Limo. Wisatawan bisa datang dengan anak-anak kecil yang akan menyukai lingkungan ini.
+              </p>
+          </div>
+      </div>
+      <div class="card large carousel-item hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/kuliner/fat-bubble.jpg" alt="fat bubble">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Fat Bubble<i class="material-icons right">more_vert</i></span>
+            <p><a href="#unggul" class="activator">Detail</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Fat Bubble<i class="material-icons right">close</i></span>
+            <p>Lokasi : Jl. Margonda Raya No.238, Kemiri Muka, Beji, Depok City, West Java 16423
+              Tempat hangout yang santai dan nyaman, menyajikan aneka makanan penutup, grass jelly, es krim, kacang
+              </p>
+          </div>
+      </div>
+      <div class="card large carousel-item hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/kuliner/cafe-bingsu.jpg" alt="cafe bingsu">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Cafe Bingsu<i class="material-icons right">more_vert</i></span>
+            <p><a href="#unggul" class="activator">Detail</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Cafe Bingsu<i class="material-icons right">close</i></span>
+            <p>Lokasi : jl. Margonda raya No. 486 B
+              Hello bingsu bisa menjadi tempat makan didepok plus tempat hangout Bersama teman-teman atau keluarga. Cafe yang termasuk baru beroperasi ini sudah bisa menarik perhatian karena tempatnyabyang sangat cozy dengan desain café ini cukup unik dan ruangannya cukup luas.
+              Untuk menambah unik café ini, ada banyak hiasan-hiasan gantung yang lucu. Dan di café ini juga menawarkan kaos-kaos yang keren dan bisa anda beli bila anda suka. Untuk menunya sendiri café ini lebih menerapkan konsep menu makanan dari korea selatan baik berupa menu dessert maupun snak-snacknya.
+              .</p>
+          </div>
+      </div>
+      <div class="card large carousel-item hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/rekreasi/hutan-kota-depok.jpg" alt="hutan kota">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Hutan Kota<i class="material-icons right">more_vert</i></span>
+            <p><a href="#unggul" class="activator">Detail</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Hutan Kota<i class="material-icons right">close</i></span>
+            <p>Lokasi : Jl. Lingkar Kampus Utara, Kelurahan Kukusan, Kecamatan Beji, Kota Depok, Jawa Barat
+              Hutan menjadi jantung kota yang harus dijaga dan dirawat dengan benar. Biasanya kota-kota besar memiliki hutan kota sebagai sumber oksigen dan penghijauan wilayahnya.Tak terkecuali Depok di Jawa Barat. Depok memiliki hutan kota yang menawan. Termasuk di dalam kawasan Universitas Indonesia (UI) bikin hutan ini makin populer.
+              </p>
+          </div>
+      </div>
+    </div>
+
+    <div class="tim row center">
+      <div class="row">
+        <h2>OUR TEAM</h2>
+      </div>
+      <div class="col m3 s12">
+        <div class="row">
+          <div class="col s12">
+            <img src="img/tim/rangga.jpg" width="200" alt="" class="circle responsive-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <h5>Rangga Saputa Abas</h5>
+            <blockquote>
+              developer SIWIKODE
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col m3 s12">
+        <div class="row">
+          <div class="col s12">
+            <img src="img/tim/toti.png" width="200" alt="" class="circle responsive-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <h5>Toto Jati Wijayanto</h5>
+            <blockquote>
+              developer SIWIKODE
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col m3 s12">
+        <div class="row">
+          <div class="col s12">
+            <img src="img/tim/elbit.jpg" width="200" alt="" class="circle responsive-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <h5>Elbit Nuriya</h5>
+            <blockquote>
+              developer SIWIKODE
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col m3 s12">
+        <div class="row">
+          <div class="col s12">
+            <img src="img/tim/fadhilah.jpg" width="200" alt="" class="circle responsive-img">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <h5>Fadhila Nur Khaliza</h5>
+            <blockquote>
+              developer SIWIKODE
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kontak white-text">
+      <div class="contaier">
+        <div class="row">
+          <div class="col m4">
+            <h3>SIWIKODE</h3>
+            <p>SIWIKODE merupakan website yang menyediakan akses ke berbagai wisata rekreasi maupun kuliner yang ada di Depok. Temukan tempat yang luar biasa di Depok bersama SIWIKODE</p>
+          </div>
+          <div class="col m4 s12">
+            <h3>Navigasi</h3>
+
+            <a href="index.html">Home</a>
+            <div class="divider"></div>
+            <a href="html/rekreasi.html">Wisata Rekreasi</a>
+            <div class="divider"></div>
+            <a href="html/kuliner.html">Wisata Kuliner</a>
+            <div class="divider"></div>
+          </div>
+          <div class="col m4">
+            <h3>Contact Us</h3>
+            <p>Hubungi kami jika ada kendala dalam melakukan pemesanan. Operator kami siap melayani anda dengan full service 24 jam.</p>
+            <a href=""><i class="material-icons">facebook</i></a>
+            <a href=""><i class="material-icons">subscriptions</i></a>
+            <a href=""><i class="material-icons">phone</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="white-text">
+      <p>Copyright 2021 - 2025 &copy; SIWIKODE TI04 KELOMPOK 7. <i>Alright Reserved</i> with <i class="material-icons">favorite</i> and <i class="material-icons">free_breakfast</i></p>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let btnLogin = document.querySelector(".index-login");
+        btnLogin.addEventListener('click', function(e){
+            let userName = e.target.previousElementSibling.previousElementSibling.children[0].children[1].value;
+            let passWord = e.target.previousElementSibling.children[0].children[1].value;
+            if (userName == "siwikuy" && passWord == "gaskeun"){
+                window.location.href = 'html/admin/admin.html'
+
+            } else{
+                alert("Username/Password yang Anda masukkan salah")
+            }
+        });
+    });
+    </script>
+  </body>
+</html>

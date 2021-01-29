@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SIWIKODE | REKREASI KOTA DEPOK</title>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">SIWIKODE</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="kuliner.html">Wisata Kuliner</a></li>
+                        <li><a class="modal-trigger" href="#registrasi" data-target="registrasi">Registrasi</a></li>
+                        <li><a class="modal-trigger" href="#login" data-target="login">LOGIN</a></li>
+                    </ul>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+                <!-- Modal Structure -->
+                <div id="registrasi" class="modal modal-fixed-footer" style="width: 400px; min-height: 85%;">
+                    <div class="modal-content">
+                        <div class="row">
+                            <form class="col s12 center">
+                            <div class="row">
+                                <i class="material-icons">account_circle</i>
+                                <h2>FORM REGISTRASI</h2>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">account_circle</i>
+                                  <input id="registrasi-username" type="text" class="validate">
+                                  <label for="registrasi-username">Username</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="registrasi-password" type="password" class="validate">
+                                    <label for="registrasi-password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="confirm-password" type="password" class="validate">
+                                    <label for="confirm-password">Confirm Password</label>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span>Remember Me</span>
+                                        </label>
+                                </div>
+                            </div>
+
+                            
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Registrasi
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <button class="btn waves-effect yellow darken-2 waves-yellow" type="reset" name="action">Reset
+                                <i class="material-icons right">mode_edit</i>
+                            </button>
+                            </form>
+                          </div>
+                    </div>
+                </div>
+                <!-- Modal Structure -->
+                <div id="login" class="modal modal-fixed-footer" style="width: 400px; min-height: 85%;">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col s12 center form">
+                                <div class="row">
+                                    <i class="material-icons">account_circle</i>
+                                    <h2>FORM LOGIN</h2>
+                                    <div class="divider"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" name="user" type="text" class="validate">
+                                    <label for="icon_prefix">Username</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">lock</i>
+                                        <input id="password" name="pass" type="password" class="validate">
+                                        <label for="password">Password</label>
+                                            <label>
+                                            <input type="checkbox" />
+                                            <span>Remember Me</span>
+                                            </label>
+                                    </div>
+                                    
+                                </div>
+
+                                <button class="btn index-login waves-effect waves-light" type="submit" name="action">Login
+                                    <i class="material-icons right">send</i>
+                                </button>
+                                <button class="btn reset waves-effect yellow darken-2 waves-yellow" type="reset" name="action">Reset
+                                    <i class="material-icons right">mode_edit</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="../img/grand-canyon.jpg" alt="Grand Canyon">
+                </div>
+                <a href="#user"><img class="circle" src="../img/profile.png" alt="Profile"></a>
+                <a href="#name"><span class="white-text name">Toto Jati Wijayanto</span></a>
+                <a href="#email"><span class="white-text email">totojati34@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="rekreasi.html">Wisata Rekreasi</a></li>
+        <div class="divider"></div>
+        <li><a href="kuliner.html">Wisata Kuliner</a></li>
+        <div class="divider"></div>
+        <li><a href="#registrasi" class="modal-trigger" data target="registrasi">Registrasi</a></li>
+        <div class="divider"></div>
+        <li><a href="#login" class="modal-trigger" data-target="login">LOGIN</a></li>
+    </ul>
+
+    <div class="jumbotron">
+        <h2>Temukan Wisata Terbaik Dengan Siwikode</h2>
+        <a class="waves-effect waves-light btn"><i class="material-icons right">search</i>Temukan</a>
+    </div>
+
+    <div class="link container">
+        <div class="nav-wrapper">
+            <div class="col s12 right">
+              <a href="../index.html" class="breadcrumb">Home</a>
+              <a href="#!" class="breadcrumb">Wisata Rekreasi</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="items">
+        <div class="unggulan row">
+            <div class="col s12">
+                <h2 class="center">Wisata Rekreasi Unggulan</h2>
+            </div>
+        </div>
+        <div class="row bungkus">
+            <!-- <div class="container"> -->
+                <div class="col m6 s12">
+                    <img src="../img/rekreasi/Arung-Jeram-Ciliwung-Depok.jpg" alt="grand-canyon" class="big responsive-img gede">
+                    <h3 class="tempat">Arum Jeram Ciliwung</h3>
+                    <div class="rating">
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star</i>
+                        <i class="material-icons">star_half</i>
+                    </div>
+                    <h6 class="alamat">Jl. Boulevard Raya Grand Depok City, Depok, Pancoran MAS, Kota Depok, Jawa Barat</h6>
+                    <p class="deskripsi">Nah, untuk anda yang suka dengan sesuatu yang menantang adrenalin, anda dapat mencoba arung jeram di sungai Ciliwung yang hulunya juga ada di Depok. Depok sekarang juga mempunyai pos pantau Ciliwung Ratujaya. Dan pada akhir pekan biasanya para komunitas Sahabat Ciliwung akan berkumpul di pos pantau ini atau berada di kolong jembatan Grand Depok City. Bagaimana, tertarik untuk menaklukan sungai Ciliwung?
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5413871815344!2d106.83308865760911!3d-6.3754437990721575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec16f5bc5d09%3A0xf507274b51c3051c!2sHello%20Bingsu%20Cafe!5e0!3m2!1sid!2sid!4v1610236395941!5m2!1sid!2sid" class="lokasi" frameborder="0" style="border:0; width: 100%; height: 50vh;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Detail</a>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal modal-fixed-footer" style="width: 70%; min-height: 90%;">
+                    <div class="modal-content">
+                        <h3>Modal Header</h3>
+                        <h6>Jl. Boulevard Raya Grand Depok City, Depok, Pancoran MAS, Kota Depok, Jawa Barat</h6>
+                        <div class="rating">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_half</i>
+                        </div>
+                        <img src="../img/kawah-ijen.jpg" alt="kawah-ijen" class="responsive-img">
+                        <p>lorem1000</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5413871815344!2d106.83308865760911!3d-6.3754437990721575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec16f5bc5d09%3A0xf507274b51c3051c!2sHello%20Bingsu%20Cafe!5e0!3m2!1sid!2sid!4v1610236395941!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 50vh;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-red btn red">Cancel</a>
+                    </div>
+                </div>
+                <div class="col m6 s12">
+                    <div class="row thumbnail">
+                        <div class="col s6">
+                            <img src="../img/rekreasi/Arung-Jeram-Ciliwung-Depok.jpg" alt="article2" class="responsive-img thumb">
+                        </div>
+                        <div class="col s6">
+                            <h5>Arum Jeram Ciliwung</h5>
+                            <div class="rating">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                            </div>
+                            <h6>Jl. Boulevard Raya Grand Depok City, Depok, Pancoran MAS, Kota Depok, Jawa Barat</h6>
+                            <p>Nah, untuk anda yang suka dengan sesuatu yang menantang adrenalin, anda dapat mencoba arung jeram di sungai Ciliwung yang hulunya juga ada di Depok. Depok sekarang juga mempunyai pos pantau Ciliwung Ratujaya. Dan pada akhir pekan biasanya para komunitas Sahabat Ciliwung akan berkumpul di pos pantau ini atau berada di kolong jembatan Grand Depok City. Bagaimana, tertarik untuk menaklukan sungai Ciliwung?</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253737.12146078653!2d106.6726929366484!3d-6.439932572340665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebd804fbb993%3A0x3df30b2de1fb6ab5!2sKomunitas%20Ciliwung%20Depok!5e0!3m2!1sid!2sid!4v1610508806562!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="row thumbnail">
+                        <div class="col s6">
+                            <img src="../img/rekreasi/hutan-kota-depok.jpg" alt="article2" class="responsive-img thumb">
+                        </div>
+                        <div class="col s6">
+                            <h5>Hutan Kota</h5>
+                            <div class="rating">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                            </div>
+                            <h6>University of Indonesia, Jakarta Selatan, RW.15, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630</h6>
+                            <p>Jalan-jalan di tengah hutan lebat yang berada di tengah kota memang menimbulkan senasi sendiri. Lari sejenak dari kebisingan kota sembari merefreshkan pikiran sejenak dari beragam aktivitas yang menjenuhkan layaknya asik untuk dilakukan. Pastinya, disini anda akan disambut dengan keberadaan pepohonan rimbun lengkap dengan satwa atau burung-burung yang bebas berkicau. Hal seperti ini merupakan momen yang sangat langka dan sayang untuk dilewatkan. Dijamin ketika anda berada di tempat ini, anda enggan untuk beranjak.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3101518407657!2d106.82443461417269!3d-6.353880763927932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69edfe3884448d%3A0x7aca5f8609e26344!2sHutan%20UI!5e0!3m2!1sid!2sid!4v1610509806857!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="row thumbnail">
+                        <div class="col s6">
+                            <img src="../img/rekreasi/Kampung-99-Pepohonan.jpg" alt="article2" class="responsive-img thumb">
+                        </div>
+                        <div class="col s6">
+                            <h5>Kampung 99</h5>
+                            <div class="rating">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                            </div>
+                            <h6>Jl. KH. Muhasan II, Meruyung, Limo, Meruyung, Kec. Limo, Kota Depok, Jawa Barat 16515</h6>
+                            <p>Mencari tempat wisata alam yang asik nan menarik, sepertinya Kampung 99 Pepohonan ini dapat anda jadikan alternatif tempat wisata anda selanjutnya. Disini anda akan menjumpai berbagai jenis pohon yang berbeda, mulai dari pohon jati putih, jati, beringin, rengas, bintaro, damar, mahoni, kayu manis, kayu putih, kopo, trembesi, sonokeling, ketapang, kirai, karet, maja, eboni, rotan, nyamplung, puspa, putat, rembang serta beragam pohon keras lainnya.Karena banyaknya pepohonan disana, maka tak heran jika suasana yang tercipta pun sangat segar dan menenangkan. Meskipun tidak ada tiket masuknya, namun para pengunjung akan ditemani oleh guide untuk keamanan lingkungan rumah-rumah tetap terjaga.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0731452844575!2d106.76288671417304!3d-6.384561164224771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebfa8359437f%3A0x1417a0b336117a8c!2sKampung%2099%20Pepohonan!5e0!3m2!1sid!2sid!4v1610509734294!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="row thumbnail">
+                        <div class="col s6">
+                            <img src="../img/rekreasi/Waterpark-Aladin.jpg" alt="article2" class="responsive-img thumb">
+                        </div>
+                        <div class="col s6">
+                            <h5>Waterpark Aladin</h5>
+                            <div class="rating">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                            </div>
+                            <h6>Jl. Boulevard Grand Depok City, Tirtajaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16412</h6>
+                            <p>Bersenang-senang di kota Depok sudah tidak perlu bingung lagi, datang saja ke Depok Fantasi Waterpark. Dengan menawarkan berbagai macam wahana air yang seru untuk dinikmati bersama keluarga dijamin akan memnajakan anda beserta keluarga anda.Bagi kalian yang berekreasi di waterpark ini jangan sampai melewatkan satu wahana sekalipun. Dan khususnya bagi anda yang gemar akan sesuatu yang dapat memacu adrenalin, anda wajib banget untuk mencoba giant slide. Wahana yang satu ini bukan hanya sekedar wahana biasa, namun dengan ukuran dan lintasan yang panjang yang dapat menguji adrenalin anda. Seru deh!</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.80094390294!2d106.8262226141734!3d-6.419617364565807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ea3fcdbc7187%3A0x851fe112499c426!2sDepok%20Fantasi%20Waterpark%20-%20Aladdin!5e0!3m2!1sid!2sid!4v1610509884063!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="row thumbnail">
+                        <div class="col s6">
+                            <img src="../img/rekreasi/taman-wiladatika.jpg" alt="article2" class="responsive-img thumb">
+                        </div>
+                        <div class="col s6">
+                            <h5>Taman Wiladatika</h5>
+                            <div class="rating">
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                            </div>
+                            <h6>Jl. Jambore No.1, Harjamukti, Kec. Cimanggis, Kota Depok, Jawa Barat 13720
+                            </h6>
+                            <p>Mencari ruan terbuka hijau yang dapat dijadikan sebagai tempat bersantai sekaligus rekreasi bersama keluarga, sepertinya Taman Rekreasi Wiladatika merupakan jawaban yang tepat dari pertanyaan anda. Taman ini biasa digunakan sebagai tempat piknik keluarga dan juga acara besar pramuka atau berkemah.Lokasinya yang strategis membuat tempat ini tak luput dari pandangan para wisatawan. Adanya pepohonan yang cukup rimbun dan hijau enjadikan udara di sekitar taman terasa sangat segar. Obyek wisata ini sangat cocok bagi anggota keluarga menghabiskan waktu liburan. Dengan membawa anak kecil, mereka bisa bermain sambil berinteraksi dengan alam.</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.184268261262!2d106.89113831417284!3d-6.370194664085579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eca341d5feeb%3A0x1475ebc18101ced!2sTaman%20Rekreasi%20Wiladatika!5e0!3m2!1sid!2sid!4v1610510056597!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+    </section>
+
+    <div class="unggulan row">
+        <div class="col s12">
+          <h2 class="center">KOMENTAR</h2>
+        </div>
+    </div>
+
+    <div id="komentar" class="carousel center komentar">
+        <div class="carousel-item hoverable">
+            <img src="../img/komentar/people1.jpg" class="circle responsive-img" alt="">
+            <h5>Zulfikar Bahri</h5>
+            <blockquote>
+                Website nya sangat bagus dan membantu untuk siapapun yang ingin mencari tempat untuk berwisata.
+            </blockquote>
+        </div>
+        <div class="carousel-item hoverable">
+            <img src="../img/komentar/people2.jpg" class="circle responsive-img" alt="">
+            <h5>Natasha Romanoff</h5>
+            <blockquote>
+                Mudah untuk diakses dan user friendly
+            </blockquote>
+        </div>
+        <div class="carousel-item hoverable">
+            <img src="../img/komentar/people3.jpg" class="circle responsive-img" alt="">
+            <h5>Steve Roger</h5>
+            <blockquote>
+                Cocok untuk yang ingin mencari tempat untuk melepas penat.
+            </blockquote>
+            
+        </div>
+    </div>
+        
+    <div class="kontak white-text">
+        <div class="contaier">
+            <div class="row">
+                <div class="col m4">
+                    <h3>SIWIKODE</h3>
+                    <p>SIWIKODE merupakan website yang menyediakan akses ke berbagai wisata rekreasi maupun kuliner yang ada di Depok. Temukan tempat yang luar biasa di Depok bersama SIWIKODE</p>
+                </div>
+                <div class="col m4 s12">
+                    <h3>Navigasi</h3>
+        
+                    <a href="../index.html">Home</a>
+                    <div class="divider"></div>
+                    <a href="rekreasi.html">Wisata Rekreasi</a>
+                    <div class="divider"></div>
+                    <a href="kuliner.html">Wisata Kuliner</a>
+                    <div class="divider"></div>
+                </div>
+                <div class="col m4">
+                    <h3>Contact Us</h3>
+                    <p>Hubungi kami jika ada kendala dalam melakukan pemesanan. Operator kami siap melayani anda dengan full service 24 jam.</p>
+                    <a href=""><i class="material-icons">facebook</i></a>
+                    <a href=""><i class="material-icons">subscriptions</i></a>
+                    <a href=""><i class="material-icons">phone</i></a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="white-text">
+        <p>Copyright 2021 - 2025 &copy; SIWIKODE TI04 KELOMPOK 7. <i>Alright Reserved</i> with <i class="material-icons">favorite</i> and <i class="material-icons">free_breakfast</i></p>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let btnLogin = document.querySelector(".index-login");
+            btnLogin.addEventListener('click', function(e){
+                let userName = e.target.previousElementSibling.previousElementSibling.children[0].children[1].value;
+                let passWord = e.target.previousElementSibling.children[0].children[1].value;
+                if (userName == "siwikuy" && passWord == "gaskeun"){
+                    window.location.href = 'admin/admin.html'
+                } else{
+                    alert("Username/Password yang Anda masukkan salah")
+                }
+            });
+        });
+    </script>
+  </body>
+</html>

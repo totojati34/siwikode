@@ -1,0 +1,427 @@
+body {
+    min-height: 150vh;
+    font-family: 'Quicksand', sans-serif;
+    /* background-color: #e2e2e2; */
+}
+
+body,
+.brand-logo {
+    opacity: 0;
+}
+
+.brand-logo {
+    font-weight: 700;
+}
+
+.landing.parallax-container {
+    height: 400px;
+}
+
+.nav-wrapper ul li a {
+    font-weight: 600;
+}
+
+.nav-wrapper ul li:last-child {
+    margin-left: 16vmin;
+}
+
+.nav-wrapper ul li a:hover {
+    background-color: #ffc107;
+}
+
+/* NAVBAR */
+.navbar-fixed {
+    position: absolute;
+}
+
+
+.sidenav-trigger {
+    float: right !important;
+}
+
+.sidenav .background img {
+    width: 100%;
+}
+
+
+.navbar-fixed nav {
+    background: transparent;
+    transition: .5s;
+}
+
+
+/* CAROUSEL */
+.gambar1 .btn {
+    font-weight: 600;
+}
+
+.gambar1.carousel {
+    height: 90vh;
+}
+
+.gambar2.carousel {
+    height: 80vh;
+}
+
+.gambar2.carousel .indicator-item,
+#komentar .indicator-item {
+    background-color: #ffe082;
+    top: 30px;
+}
+
+.gambar2.carousel .indicator-item.active,
+#komentar .indicator-item.active {
+    background-color: #ff8f00;
+}
+
+.gambar2 .carousel-item {
+    height: 350px;
+    width: 300px;
+}
+
+.gambar1.carousel .carousel-item.white-text h2 {
+    margin-top: 40vmin;
+    font-size: 50px;
+}
+
+.gambar1 p {
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.gambar1 .carousel-item:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/kuliner/cafe-bingsu.jpg) no-repeat 0 -150px;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.gambar1 .carousel-item:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/rekreasi/Waterpark-Aladin.jpg) 0 -250px;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.gambar1 .carousel-item:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/rekreasi/taman-wiladatika.jpg) 0 -250px;
+    background-repeat: no-repeat;
+}
+
+.gambar1 .carousel-item:nth-child(5) {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/rekreasi/Kampung-99-Pepohonan.jpg) 0 -250px;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+#komentar {
+    margin-bottom: 12vmin;
+}
+
+#komentar .carousel-item {
+    width: 200px;
+    height: 400px;
+    padding: 5px 10px;
+}
+
+
+/* FEATURES */
+.features {
+    padding: 8vmin 0;
+}
+
+.features .col.m4 i {
+    color: #4db6ac;
+}
+
+.features .col.m4 p {
+    color: #777;
+    font-weight: 400;
+}
+
+/* KONTAK */
+
+.kontak {
+    padding: 50px 0;
+    background-color: #4db6ac;
+}
+
+.kontak .col.m4:last-child a {
+    color: #fff;
+    margin: 5px 7px;
+    transition: .3s;
+}
+
+.kontak .col.m4:last-child a:hover {
+    color: #ffa000;
+}
+
+.kontak .col.m4:last-child a i {
+    transition: .3s;
+}
+
+.kontak .col.m4:last-child a:hover i {
+    transform: rotate(20deg);
+}
+
+.kontak .col.m4:first-child,
+.kontak .col.m4:last-child,
+.kontak .col.m4:nth-child(2) {
+    padding: 10px 25px;
+}
+
+.kontak .col.m4:nth-child(2) a {
+    display: block;
+    color: white;
+    padding: 10px;
+    font-size: 3vmin;
+    transition: .3s;
+}
+
+.kontak .col.m4:nth-child(2) a:hover {
+    color: #ffe082;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    height: 95vmin;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/article2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: ellipse(180vh 100vh at 50% -5vh);
+
+}
+
+.jumbotron .btn {
+    background-color: #26a69a;
+}
+
+.jumbotron h2,
+.jumbotron .btn {
+    transform: translateY(90px);
+    font-weight: 700;
+}
+
+.jumbotron h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 10vmin;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+/* BREADCUMS */
+.link.container .nav-wrapper {
+    transform: translateY(50px);
+}
+
+.breadcrumb,
+.breadcrumb::before {
+    color: #ff8f00;
+}
+
+.breadcrumb::before {
+    transform: translateY(-5px);
+}
+
+.breadcrumb:last-child {
+    color: #ffc107;
+}
+
+.items {
+    /* height: 80vh; */
+    /* background-color: purple; */
+    margin: 16vmin 0;
+    padding: 0 30px;
+}
+
+.items .row:last-child .col.m6:first-child p {
+    text-align: justify;
+}
+
+.items .row:last-child .col.m6:last-child {
+    height: 40vmax;
+    padding: 20px 7px;
+    overflow: auto;
+    /* background-color: blue; */
+}
+
+.items .row:last-child .col.m6.s12 .btn {
+    margin: 20px 0
+}
+
+.items .row:last-child .col.m6.s12 i,
+#modal1 .modal-content .material-icons,
+.input-field .material-icons {
+    color: #ffea00;
+}
+
+.items .row:last-child .col.m6.s12 iframe,
+.items .row:last-child .col.m6.s12 p,
+.thumbnail iframe,
+.thumbnail .col.s6:last-child p {
+    display: none;
+}
+
+.thumb:hover {
+    cursor: pointer;
+    box-shadow: #777 0 0 10px;
+    transition: .3s;
+}
+
+/* LOGIN */
+
+#login .form .row:nth-child(2) .input-field,
+#registrasi form .row .input-field {
+    margin: -10px 0;
+}
+
+#login .form .row:first-child .material-icons,
+#registrasi form .row:first-child .material-icons {
+    font-size: 3em;
+    color: #26a69a;
+}
+
+#login .form .row:nth-child(3) label:last-child,
+#registrasi form .row:nth-child(4) label:last-child {
+    transform: translate(-30px, 85px);
+}
+
+#login .form .row:nth-child(3) label:last-child span,
+#registrasi form .row:nth-child(4) label:last-child span {
+    font-size: 0.9em;
+}
+
+#registrasi h2 {
+    font-size: 3em;
+}
+
+#login h2,
+#registrasi h2 {
+    color: #4db6ac;
+    font-weight: 700;
+}
+
+#registrasi .btn {
+    margin: 0 12px;
+    transform: translateY(60px);
+}
+
+#login .btn {
+    margin: 0 12px;
+    transform: translateY(100px);
+}
+
+#login .btn .material-icons,
+#registrasi .btn .material-icons {
+    transform: translateY(-10px);
+    font-size: 1.2em;
+}
+
+
+/* UNGGULAN */
+.unggulan h2,
+.data h2,
+.tim h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 14vmin;
+}
+
+.unggulan h2::after,
+.data h2::after,
+.tim h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 10%;
+    border-radius: 20%;
+    transform: translateY(20px);
+    background-color: #ffa000;
+    z-index: 2;
+}
+
+/* TIM */
+.tim {
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.tim h5 {
+    font-weight: 600;
+}
+
+/* DATA */
+.data {
+    margin: 80px 0;
+    padding: 0 30px;
+}
+
+.data table tbody td:last-child .btn-small {
+    margin-bottom: 10px !important;
+}
+
+.data table tbody td:last-child .btn-small::after,
+#login .modal-content .btn::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.data table tbody td:last-child .btn-small .material-icons {
+    display: block;
+    position: relative;
+}
+
+
+.data th,
+.data td {
+    padding: 15px 25px;
+}
+
+.striped {
+    background-color: #4db6ac;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #26a69a;
+    padding: 20px 40px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .material-icons {
+    transform: translateY(5px);
+    color: #f50057;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn .6s forwards;
+}

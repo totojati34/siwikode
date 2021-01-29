@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SIWIKODE KELOLA KOMENTAR | ADMIN PAGE</title>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">SIWIKODE</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../rekreasi.html">Wisata Rekreasi</a></li>
+                        <li><a href="../kuliner.html">Wisata Kuliner</a></li>
+                        <li><a href="admin.html">Kelola Data</a></li>
+                        <li><a href="#">LOGOUT</a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+                <!-- Modal Structure -->
+                <div id="login" class="modal modal-fixed-footer" style="width: 400px; min-height: 85%;">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col s12 center form">
+                            <div class="row">
+                                <i class="material-icons">account_circle</i>
+                                <h2>FORM LOGIN</h2>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                  <i class="material-icons prefix">account_circle</i>
+                                  <input id="icon_prefix" type="text" class="validate">
+                                  <label for="icon_prefix">Username</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span>Remember Me</span>
+                                        </label>
+                                </div>
+                                
+                            </div>
+
+                            
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <button class="btn reset waves-effect yellow darken-2 waves-yellow" type="reset" name="action">Reset
+                                <i class="material-icons right">mode_edit</i>
+                            </button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul id="mobile-demo" class="sidenav">
+      <li><div class="user-view">
+          <div class="background">
+          <img src="../../img/raja-ampat.jpg" alt="Grand Canyon">
+          </div>
+          <a href="#user"><img class="circle" src="../../img/profile.png" alt="Profile"></a>
+          <a href="#name"><span class="white-text name">Toto Jati Wijayanto</span></a>
+          <a href="#email"><span class="white-text email">totojati34@gmail.com</span></a>
+      </div></li>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../rekreasi.html">Wisata Rekreasi</a></li>
+      <div class="divider"></div>
+      <li><a href="../kuliner.html">Wisata Kuliner</a></li>
+      <div class="divider"></div>
+      <li><a href="admin.html">Kelola Data</a></li>
+      <div class="divider"></div>
+      <li><a href="#">LOGOUT</a></li>
+    </ul>
+
+    <div class="jumbotron">
+        <h2>Selamat Datang Admin</h2>
+        <a class="waves-effect waves-light btn"><i class="material-icons right">search</i>Lihat Data</a>
+    </div>
+
+    <div class="link container">
+      <div class="nav-wrapper">
+          <div class="col s12 right">
+            <a href="../../index.html" class="breadcrumb">Home</a>
+            <a href="#!" class="breadcrumb">Admin</a>
+            <a href="komentar.html" class="breadcrumb">Kelola Komentar</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="data">
+        <div class="row">
+            <div class="col s12">
+                <h2>KELOLA KOMENTAR</h2>
+            </div>
+        </div>
+        <table class="striped responsive-table">
+            <thead class="white-text">
+              <tr>
+                  <th>No</th>
+                  <th>Nama Wisata</th>
+                  <th>Nama User</th>
+                  <th>Isi Komentar</th>
+                  <th>Email</th>
+                  <th>Action</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td class="data-index">1</td>
+                <td class="data-wisata">Water Park Aladin</td>
+                <td class="data-kontak">Burhan</td>
+                <td class="data-hp">Mantap uhuy gann</td>
+                <td class="data-email">burhanuhuy@gmail.com</td>
+                <td>
+                  <a class="waves-effect waves-light komen btn-small tooltipped blue modal-trigger" data-position="left" data-tooltip="Lihat Data" href="#lihat"><i class="material-icons">remove_red_eye</i></a>
+                  <a class="waves-effect waves-light komen btn-small green modal-trigger tooltipped" data-position="left" data-tooltip="Edit Data" href="#edit"><i class="material-icons">create</i></a>
+                  <a class="waves-effect waves-light komen red btn-small modal-trigger tooltipped" data-position="left" data-tooltip="Hapus Data" href=""><i class="material-icons">delete</i></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="data-index">2</td>
+                <td class="data-wisata">Kampung 99</td>
+                <td class="data-kontak">Farhan</td>
+                <td class="data-hp">Tempatnya nyaman, enak buat ngumpul bareng temen, keluarga, pacar, mantan, mantan temen, temen mantan, mantan pacar, pacar mantan</td>
+                <td class="data-email">mantanfarhan@gmail.com</td>
+                <td>
+                  <a class="waves-effect waves-light komen btn-small tooltipped blue modal-trigger" data-position="left" data-tooltip="Lihat Data" href="#lihat"><i class="material-icons">remove_red_eye</i></a>
+                  <a class="waves-effect waves-light komen btn-small green modal-trigger tooltipped" data-position="left" data-tooltip="Edit Data" href="#edit"><i class="material-icons">create</i></a>
+                  <a class="waves-effect waves-light komen red btn-small modal-trigger tooltipped" data-position="left" data-tooltip="Hapus Data" href=""><i class="material-icons">delete</i></a>
+                </td>
+              </tr>
+              <tr>
+                <td class="data-index">3</td>
+                <td class="data-wisata">Fat Bubble</td>
+                <td class="data-kontak">Mikasa Ackreman</td>
+                <td class="data-hp">Ereen pulang, jangan ngamuk mulu, capek jagainnya.</td>
+                <td class="data-email">mikasackreman@gmail.com</td>
+                <td>
+                  <a class="waves-effect waves-light komen btn-small tooltipped blue modal-trigger" data-position="left" data-tooltip="Lihat Data" href="#lihat"><i class="material-icons">remove_red_eye</i></a>
+                  <a class="waves-effect waves-light komen btn-small green modal-trigger tooltipped" data-position="left" data-tooltip="Edit Data" href="#edit"><i class="material-icons">create</i></a>
+                  <a class="waves-effect waves-light komen red btn-small modal-trigger tooltipped" data-position="left" data-tooltip="Hapus Data" href=""><i class="material-icons">delete</i></a>
+                </td>
+              </tr>
+            </tbody>
+
+            <div id="lihat" class="modal modal-fixed-footer" style="width: 70%; min-height: 90%;">
+              <div class="modal-content">
+                <h3>Lihat Data</h3>
+                <form class="col s12 center">
+                  <div class="container">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">local_offer</i>
+                        <input id="lihat-komentar-wisata" type="text" class="validate" autocomplete="off" autofocus disabled>
+                        <label for="lihat-komentar-wisata">Nama Wisata</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="lihat-komentar-kontak" type="text" class="validate" autocomplete="off" autofocus disabled>
+                        <label for="lihat-komentar-kontak">Kontak</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">edit_location</i>
+                        <textarea id="lihat-komentar-isi" class="materialize-textarea" autocomplete="off" autofocus disabled></textarea>
+                        <label for="lihat-komentar-isi">Alamat Lengkap</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="lihat-komentar-email" type="text" class="validate" autocomplete="off" autofocus disabled>
+                        <label for="lihat-komentar-email">Email</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-red btn red">Cancel</a>
+              </div>
+            </div>
+            <div id="edit" class="modal modal-fixed-footer" style="width: 70%; min-height: 90%;">
+              <div class="modal-content">
+                <h3>Edit Data</h3>
+                <form class="col s12 center">
+                  <div class="container">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">local_offer</i>
+                        <input id="komentar-wisata" type="text" class="validate" autocomplete="off" autofocus>
+                        <label for="komentar-wisata">Nama Wisata</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="komentar-kontak" type="text" class="validate" autocomplete="off" autofocus>
+                        <label for="komentar-kontak">Kontak</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">edit_location</i>
+                        <textarea id="komentar-isi" class="materialize-textarea" autocomplete="off" autofocus></textarea>
+                        <label for="komentar-isi">Alamat Lengkap</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="komentar-email" type="text" class="validate" autocomplete="off" autofocus>
+                        <label for="komentar-email">Email</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" type="reset" class="waves-effect waves-green btn green btn-edit">Edit</a>
+                <a href="#!" class="modal-close waves-effect waves-red btn red">Cancel</a>
+              </div>
+            </div>
+        </table>
+    </div>
+
+    <div class="kontak white-text">
+      <div class="contaier">
+        <div class="row">
+          <div class="col m4">
+            <h3>SIWIKODE</h3>
+            <p>SIWIKODE merupakan website yang menyediakan akses ke berbagai wisata rekreasi maupun kuliner yang ada di Depok. Temukan tempat yang luar biasa di Depok bersama SIWIKODE</p>
+          </div>
+          <div class="col m4 s12">
+            <h3>Navigasi</h3>
+
+            <a href="../../index.html">Home</a>
+            <div class="divider"></div>
+            <a href="../rekreasi.html">Wisata Rekreasi</a>
+            <div class="divider"></div>
+            <a href="../kuliner.html">Wisata Kuliner</a>
+            <div class="divider"></div>
+          </div>
+          <div class="col m4">
+            <h3>Contact Us</h3>
+            <p>Hubungi kami jika ada kendala dalam melakukan pemesanan. Operator kami siap melayani anda dengan full service 24 jam.</p>
+            <a href=""><i class="material-icons">facebook</i></a>
+            <a href=""><i class="material-icons">subscriptions</i></a>
+            <a href=""><i class="material-icons">phone</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="white-text">
+      <p>Copyright 2021 - 2025 &copy; SIWIKODE TI04 KELOMPOK 7. <i>Alright Reserved</i> with <i class="material-icons">favorite</i> and <i class="material-icons">free_breakfast</i></p>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
